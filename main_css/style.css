@@ -1,0 +1,520 @@
+/*INDEX.HTML*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    opacity: 0.8;
+    justify-content: space-between;
+    background: gray;
+    align-items: center;
+    min-height: 7rem;
+    display: flex;
+    padding: 1rem;
+    border: 0.4rem solid black;
+}
+
+.logo img {
+    display: flex;
+    width: 10rem;
+    height: 6.5rem;
+}
+
+header a {
+    display: inline-block;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+    padding-right: 1rem;
+}
+
+.nav-section__element:hover {
+    color: blue;
+}
+
+.nav-section__element:active {
+    color: red;
+}
+
+.es {
+    width: 2.5rem;
+    height: 2rem;
+}
+
+.en {
+    width: 2.5rem;
+    height: 2rem;
+}
+
+.check {
+    position: relative;
+    width: 5rem;
+    cursor: pointer;
+}
+
+.check::before {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 2.5rem;
+    background: black;
+    border-radius: 2.5rem;
+}
+
+.check::after {
+    content: "";
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: white;
+    border-radius: 2.5rem;
+    transition: 0.25s;
+    border: 2px solid black;
+}
+
+.check:checked::after {
+    left: 2.5rem;
+    border: 2px solid blue;
+}
+
+.check:checked::before {
+    background: blue;
+}
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+.title{
+    background-color: aqua;
+    border: 0.4rem solid black;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+    min-width: 13rem;
+    max-width: 100%;
+}
+
+.title__animation {
+    font-size: 4.5rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    animation: jump 1s infinite;
+    transform: translatey(0);
+}
+
+@keyframes jump {
+    0%{transform: translatey(0);}
+    40%{transform: translatey(50px);}
+}
+
+.section{
+    background-color: greenyellow;
+    border: 0.3rem solid black;
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    min-width: 20rem;
+    max-width: 37rem;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: -2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    border-radius: 50%;
+    position: relative;
+}
+
+.text1{
+    border: 15px solid yellow;
+    padding: 5rem;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    box-shadow: 7px 7px 7px 7px rgb(222, 222, 30);
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-yellowish-old-vintage-paper-parchment-background-image_355706.jpg);
+}
+
+.text2{
+    border: 15px solid red;
+    padding: 5rem;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    box-shadow: 7px 7px 7px 7px rgb(215, 21, 21);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNutQoVvIE0bzl-XY9nDs0anmf1w4XDCIrMDtbBIUyQbQsgU6k6rI3miTOZfC5dOuWLbw&usqp=CAU);
+}
+
+.text3{
+    border: 15px solid palevioletred;
+    padding: 5rem;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    box-shadow: 7px 7px 7px 7px rgb(194, 104, 134);
+    background-image: url(https://st.depositphotos.com/1813957/4622/i/450/depositphotos_46227067-stock-photo-abstract-pink-background.jpg);
+}
+
+.text4{
+    border: 15px solid peru;
+    padding: 5rem;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    box-shadow: 7px 7px 7px 7px rgb(195, 121, 47);
+    background-image: url(https://i.pinimg.com/originals/be/de/8a/bede8a0ea934ad8a9964da14d2190846.jpg);
+}
+
+.text5{
+    border: 15px solid mediumseagreen;
+    padding: 5rem;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    box-shadow: 7px 7px 7px 7px rgb(34, 142, 83);
+    background-image: url(https://st4.depositphotos.com/10109696/38446/i/600/depositphotos_384465672-stock-photo-dark-green-metallic-wall-with.jpg);
+}
+
+.contact-style {
+    background-color: aquamarine;
+    border: 0.4rem solid black;
+    text-align: center;
+    margin: auto;
+    margin-top: 3rem;
+    min-height: 15rem;
+    min-width: 13rem;
+    max-width: 50rem;
+    justify-content: center;
+}
+
+.contact{
+    font-family: 'Cookie', cursive;
+    font-size: 50px;
+}
+
+.mensaje{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 18px;
+}
+
+.datos{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 30px;
+}
+
+.form {
+    background-color: aqua;
+    border: 0.4rem solid black;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    width: 20rem;
+    height: 7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.send {
+    cursor: pointer;
+}
+
+
+.election {
+    background-color: coral;
+    border: 0.2rem solid black;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+    min-width: 5rem;
+    max-width: 30rem;
+    min-height: 5rem;
+}
+
+.final{
+    font-family: 'Cookie', cursive;
+    font-size: 40px;
+}
+
+.indication {
+    cursor: pointer;
+}
+
+.enviar {
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+/*PORTAFOLIO.HTML*/
+
+.nav-section__title {
+    font-size: 3rem;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: stretch;
+    background-color: green;
+    min-width: 1rem;
+    max-width: 100%;
+    margin: auto;
+}
+
+.element {
+    text-align: center;
+    line-height: 150px;
+    border: 0.1rem solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.element__image {
+    height: 100%;
+    width: 100%;
+}
+
+.box1 {
+    grid-column: 1/4;
+    background-color: purple;
+}
+
+.es {
+    width: 2.5rem;
+    height: 2rem;
+}
+
+.en {
+    width: 2.5rem;
+    height: 2rem;
+}
+
+.marca {
+    position: relative;
+    width: 5rem;
+    cursor: pointer;
+}
+
+.marca::before {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 2.5rem;
+    background: black;
+    border-radius: 2.5rem;
+}
+
+.marca::after {
+    content: "";
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: white;
+    border-radius: 2.5rem;
+    transition: 0.25s;
+    border: 2px solid black;
+}
+
+.marca:checked::after {
+    left: 2.5rem;
+    border: 2px solid blue;
+}
+
+.marca:checked::before {
+    background: blue;
+}
+
+/*TROLEO.HTML*/
+
+.troleado {
+    background-color: darkorchid;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.dio {
+    width: 100%;
+    height: 100%;
+}
+
+/*EASTER-EGG1.HTML*/
+
+.easter-egg1__title {
+    border: 3px solid red;
+    background: pink;
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size: 2rem;
+}
+
+.easter-egg1__image {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/*EASTER-EGG2.HTML*/
+
+.background {
+    background-color: darkgoldenrod;
+}
+
+.easter-egg2__title {
+    border: 3px solid gold;
+    background: goldenrod;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.easter-egg2__image {
+    margin: auto;
+    margin-top: 1rem;
+    width: 50%;
+    height: 50%;
+}
+
+.easter-egg2__image img{
+    border-radius: 50%;
+    border: 3px solid green;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/*EASTER-EGG3.HTML*/
+
+.background-image {
+    background-image: url(../Utils/image/resplandor.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.easter-egg3__title {
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 3px solid black;
+    background: gold;
+    text-align: center;
+}
+
+.easter-egg3__image {
+    margin: auto;
+    margin-top: 1rem;
+    width: 50%;
+    height: 50%;
+}
+
+.easter-egg3__image img{
+    border-radius: 50%;
+    border: 3px solid green;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/*EASTER-EGG4.HTML*/
+
+.easter-egg4__title {
+    background: black;
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    color: white;
+    font-size: 2rem;
+}
+
+.easter-egg4__image {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/*EASTER-EGG5.HTML*/
+
+.nightmare {
+    background-color: black;
+}
+
+.easter-egg5__text {
+    text-align: center;
+    font-family: 'Creepster', cursive;
+    color: red;
+    background-image: url(../Utils/image/sangre\ cayendo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 3rem;
+}
+
+.bloody-pictures {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: stretch;
+    min-width: 1rem;
+    max-width: 100%;
+    margin: auto;
+}
+
+.bloodshed {
+    grid-column: 1/4;
+}
+
+
+.escape {
+    text-align: center;
+    background-image: url(../Utils/image/sangre\ chorreando.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.escape a {
+    font-family: 'Creepster', cursive;
+    color: white;
+    text-decoration: none;
+    font-size: 5rem;
+}
+
+.escape a:hover {
+    color: rgb(183, 22, 22);
+}
+
+.blood {
+    height: 100%;
+    width: 100%;
+}
