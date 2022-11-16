@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../main_css/style.css">
+    <link rel="stylesheet" href="../main_css/framework.css">
     <title>HAHAHA</title>
 </head>
-<body>
+<body class="dio-background">
     <header class="cabecera">
         <nav class="nav-section">
             <a class="nav-section__element" href="portafolio.html">Back</a>
             <img class="es" src="../Utils/image/Bandera de España.png" alt="bandera-de-españa">
-            <input type="checkbox" class="marca">
+            <input type="checkbox" class="jojo" checked>
             <img class="en" src="../Utils/image/Bandera del Reino Unido.jpg" alt="bandera-de-reino-unido">
         </nav>
     </header>
@@ -20,9 +21,10 @@
         <div class="troleado">
             <h1>¡¡You thought it was another easter egg but it was i Dio!!</h1>
         </div>
-        <figure>
-            <img class="dio" src="../Utils/image/dio.jpg" alt="dio de jojo's">
+        <figure class="dio">
+            <img src="../Utils/image/dio.jpg" alt="dio de jojo's" onclick=dio()>
         </figure>
     </main>
+    <script src="dio.js"></script>
 </body>
 </html>

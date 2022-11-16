@@ -3,7 +3,6 @@
 body {
     background: white;
     transition: .3s ease all;
-
     
     &.dark {
         background: black;
@@ -63,7 +62,10 @@ body {
     &.dark .final {
         color: white;
     }
-
+    
+    &.dark .thanks {
+        color: white;
+    }    
 }
 
 .switch {
@@ -103,5 +105,165 @@ body {
         display: inline-block;
         background: none;
         color: white;
+    }
+}
+
+.check1 {
+    position: relative;
+    width: 5rem;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5rem;
+        height: 2.5rem;
+        background: black;
+        border-radius: 2.5rem;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: white;
+        border-radius: 2.5rem;
+        transition: 0.25s;
+        border: 2px solid black;
+    }
+    &:checked::after {
+        left: 2.5rem;
+        border: 2px solid blue;
+    }
+    
+    &:checked::before {
+        background: blue;
+    }
+}
+
+.check2 {
+    position: relative;
+    width: 5rem;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5rem;
+        height: 2.5rem;
+        background: black;
+        border-radius: 2.5rem;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: white;
+        border-radius: 2.5rem;
+        transition: 0.25s;
+        border: 2px solid black;
+    }
+    &:checked::after {
+        left: 2.5rem;
+        border: 2px solid blue;
+    }
+    
+    &:checked::before {
+        background: blue;
+    }
+}
+
+.check3 {
+    position: relative;
+    width: 5rem;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5rem;
+        height: 2.5rem;
+        background: black;
+        border-radius: 2.5rem;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: white;
+        border-radius: 2.5rem;
+        transition: 0.25s;
+        border: 2px solid black;
+    }
+    &:checked::after {
+        left: 2.5rem;
+        border: 2px solid blue;
+    }
+    
+    &:checked::before {
+        background: blue;
+    }
+}
+
+.check4 {
+    position: relative;
+    width: 5rem;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5rem;
+        height: 2.5rem;
+        background: black;
+        border-radius: 2.5rem;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: white;
+        border-radius: 2.5rem;
+        transition: 0.25s;
+        border: 2px solid black;
+    }
+    &:checked::after {
+        left: 2.5rem;
+        border: 2px solid blue;
+    }
+    
+    &:checked::before {
+        background: blue;
+    }
+}
+
+.jojo {
+    position: relative;
+    width: 5rem;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5rem;
+        height: 2.5rem;
+        background: black;
+        border-radius: 2.5rem;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: white;
+        border-radius: 2.5rem;
+        transition: 0.25s;
+        border: 2px solid black;
+    }
+    &:checked::after {
+        left: 2.5rem;
+        border: 2px solid blue;
+    }
+    
+    &:checked::before {
+        background: blue;
     }
 }

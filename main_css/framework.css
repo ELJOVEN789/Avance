@@ -48,6 +48,9 @@ body.dark .election {
 body.dark .final {
   color: white;
 }
+body.dark .thanks {
+  color: white;
+}
 
 .switch {
   background: #343D5B;
@@ -88,4 +91,158 @@ body.dark .final {
   background: none;
   color: white;
 }
-/*# sourceMappingURL=framework.css.map */
+
+.check1 {
+  position: relative;
+  width: 5rem;
+  cursor: pointer;
+}
+.check1::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 2.5rem;
+  background: black;
+  border-radius: 2.5rem;
+}
+.check1::after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border-radius: 2.5rem;
+  transition: 0.25s;
+  border: 2px solid black;
+}
+.check1:checked::after {
+  left: 2.5rem;
+  border: 2px solid blue;
+}
+.check1:checked::before {
+  background: blue;
+}
+
+.check2 {
+  position: relative;
+  width: 5rem;
+  cursor: pointer;
+}
+.check2::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 2.5rem;
+  background: black;
+  border-radius: 2.5rem;
+}
+.check2::after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border-radius: 2.5rem;
+  transition: 0.25s;
+  border: 2px solid black;
+}
+.check2:checked::after {
+  left: 2.5rem;
+  border: 2px solid blue;
+}
+.check2:checked::before {
+  background: blue;
+}
+
+.check3 {
+  position: relative;
+  width: 5rem;
+  cursor: pointer;
+}
+.check3::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 2.5rem;
+  background: black;
+  border-radius: 2.5rem;
+}
+.check3::after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border-radius: 2.5rem;
+  transition: 0.25s;
+  border: 2px solid black;
+}
+.check3:checked::after {
+  left: 2.5rem;
+  border: 2px solid blue;
+}
+.check3:checked::before {
+  background: blue;
+}
+
+.check4 {
+  position: relative;
+  width: 5rem;
+  cursor: pointer;
+}
+.check4::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 2.5rem;
+  background: black;
+  border-radius: 2.5rem;
+}
+.check4::after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border-radius: 2.5rem;
+  transition: 0.25s;
+  border: 2px solid black;
+}
+.check4:checked::after {
+  left: 2.5rem;
+  border: 2px solid blue;
+}
+.check4:checked::before {
+  background: blue;
+}
+
+.jojo {
+  position: relative;
+  width: 5rem;
+  cursor: pointer;
+}
+.jojo::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 2.5rem;
+  background: black;
+  border-radius: 2.5rem;
+}
+.jojo::after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border-radius: 2.5rem;
+  transition: 0.25s;
+  border: 2px solid black;
+}
+.jojo:checked::after {
+  left: 2.5rem;
+  border: 2px solid blue;
+}
+.jojo:checked::before {
+  background: blue;
+}/*# sourceMappingURL=framework.css.map */
