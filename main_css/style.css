@@ -123,6 +123,19 @@ header a {
     40%{transform: translatey(50px);}
 }
 
+.section__animation {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.look {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 .section{
     background-color: greenyellow;
     border: 0.3rem solid black;
@@ -277,18 +290,22 @@ header a {
 }
 
 .thanks {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-block: 3rem;
     color: orange;
+    background: linear-gradient(gold,black);
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font-style: italic;
-    animation: slide 2s ease-in;
-    transform: translateX(0);
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
 }
 
-@keyframes slide {
-    0%{transform: translateX(-400px);}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 .jc {
@@ -312,16 +329,19 @@ header a {
 .bottom1 {
     background-color: greenyellow;
     width: 3rem;
+    border-radius: 20px;
 }
 
 .bottom2 {
     background-color: blue;
     width: 3rem;
+    border-radius: 25px;
 }
 
 .bottom3 {
-    background-color: violet;
+    background: linear-gradient(to left bottom, blueviolet 20%, red 55%, yellow);
     width: 3rem;
+    border-radius: 15px
 }
 
 .bottom4 {
@@ -332,6 +352,7 @@ header a {
 .bottom5 {
     background-color: red;
     width: 3rem;
+    border-radius: 10px;
 }
 
 /*PORTAFOLIO.HTML*/
