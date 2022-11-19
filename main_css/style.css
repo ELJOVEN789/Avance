@@ -40,6 +40,16 @@ header a {
     padding-right: 1rem;
 }
 
+header {
+    animation: title 0.5s ease-in;
+    z-index: 10;
+}
+
+@keyframes title {
+    0%{transform: translatey(-100%);}
+    100%{transform: translatey(0);}
+}
+
 .nav-section__element:hover {
     color: blue;
 }
@@ -123,18 +133,20 @@ header a {
     40%{transform: translatey(50px);}
 }
 
-.section__animation {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
+.yo {
+    margin: auto;
+    margin-top: 10rem;
+    width: 20rem;
+    height: 25rem;
+}
+    
+.yo img {
+    border: 4px solid black;
+    border-radius: 50%;
+    width: 100%;
+    cursor: pointer;
 }
 
-.look {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
 
 .section{
     background-color: greenyellow;
@@ -151,71 +163,86 @@ header a {
     font-style: oblique;
     border-radius: 50%;
     position: relative;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    z-index: 1;
+}
+
+.look {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.see {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.ver {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.instrument {
+    text-align: center;
+    margin: auto;
+}
+
+.instrument img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.text1,
+.text2,
+.text3,
+.text4,
+.text5 {
+    padding: 5rem;
+    margin-top: 0;
+    margin-inline: 1.5rem;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text1{
     border: 15px solid yellow;
-    padding: 5rem;
-    margin-top: 0;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    font-family: 'Audiowide', cursive;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
     box-shadow: 7px 7px 7px 7px rgb(222, 222, 30);
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-yellowish-old-vintage-paper-parchment-background-image_355706.jpg);
+    background-image: url(../Utils/image/fondo-amarillo.jpg);
 }
 
 .text2{
     border: 15px solid red;
-    padding: 5rem;
-    margin-top: 0;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    font-family: 'Audiowide', cursive;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
     box-shadow: 7px 7px 7px 7px rgb(215, 21, 21);
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNutQoVvIE0bzl-XY9nDs0anmf1w4XDCIrMDtbBIUyQbQsgU6k6rI3miTOZfC5dOuWLbw&usqp=CAU);
+    background-image: url(../Utils/image/fondo-rojo.jfif);
 }
 
 .text3{
     border: 15px solid palevioletred;
-    padding: 5rem;
-    margin-top: 0;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    font-family: 'Audiowide', cursive;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
     box-shadow: 7px 7px 7px 7px rgb(194, 104, 134);
-    background-image: url(https://st.depositphotos.com/1813957/4622/i/450/depositphotos_46227067-stock-photo-abstract-pink-background.jpg);
+    background-image: url(../Utils/image/fondo-rosa.jpg);
 }
 
 .text4{
     border: 15px solid peru;
-    padding: 5rem;
-    margin-top: 0;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    font-family: 'Audiowide', cursive;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
     box-shadow: 7px 7px 7px 7px rgb(195, 121, 47);
-    background-image: url(https://i.pinimg.com/originals/be/de/8a/bede8a0ea934ad8a9964da14d2190846.jpg);
+    background-image: url(../Utils/image/fondo-cafe.jpg);
 }
 
 .text5{
     border: 15px solid mediumseagreen;
-    padding: 5rem;
-    margin-top: 0;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    font-family: 'Audiowide', cursive;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
     box-shadow: 7px 7px 7px 7px rgb(34, 142, 83);
-    background-image: url(https://st4.depositphotos.com/10109696/38446/i/600/depositphotos_384465672-stock-photo-dark-green-metallic-wall-with.jpg);
+    background-image: url(../Utils/image/fondo\ verde.jpg);
 }
 
 .contact-style {
@@ -247,15 +274,62 @@ header a {
 }
 
 .form {
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: gray;
     border: 0.4rem solid black;
-    text-align: center;
     margin: auto;
     margin-top: 1rem;
     width: 20rem;
-    height: 7rem;
-    padding-top: 0.5rem;
-    padding-bottom: 4.5rem;
+    min-height: 10rem;
+    padding: 1rem;
+}
+
+.data {
+    position: relative;
+}
+
+.data input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    background: gray;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.data input:valid ~ span,
+.data input:focus ~ span {
+    color: navy;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65rem;
+    padding: 0 10px;
+    background: gray;
+    border-left: 1px solid navy;
+    border-right: 1px solid navy;
+    letter-spacing: 0.2rem;
+}
+
+.data input:valid,
+.data input:focus {
+    border: 1px solid navy;
+}
+
+.data span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1rem;
+    color: rgb(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
 }
 
 .send {
@@ -317,6 +391,173 @@ header a {
     border: 2px solid black;
 }
 
+.main-container {
+    margin: auto;
+    margin-right: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon,
+.card-container,
+.card-name,
+.card-icon1,
+.card-container1,
+.card-name1 {
+    position: relative;
+    box-shadow: 0px 0px 40px 5px rgba(35,4,7,1);
+}
+
+.card-icon,
+.card-container,
+.card-name {
+    background: linear-gradient(140deg, #0EA3E3, #F4E0D9, #011924);
+}
+
+.card-icon1,
+.card-container1,
+.card-name1 {
+    background: linear-gradient(140deg, #F4E0D9, #F1CC35, #F1AD35);
+}
+
+.card-icon,
+.card-icon1 {
+    width: 120px;
+    height: 40px;
+    position: relative;
+    left: -105px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.icon,
+.icon1 {
+    position: absolute;
+    top: 15px;
+}
+
+.icon {
+    top: 35px;
+}
+
+.icon1 {
+    top: 25px;
+}
+
+.icon img {
+    width: 150px;
+}
+.icon1 img {
+    width: 130px;
+}
+
+.club-name {
+    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.card-container,
+.card-container1 {
+    width: 280px;
+    min-height: 500px;
+}
+
+.img-uno,
+.img-dos {
+    position: absolute;
+    right: 0;
+    z-index: 3;
+}
+
+.img-uno {
+    left: 50px;
+}
+
+.img-dos {
+    bottom: 42.5px;
+    left: 55px;
+}
+
+.img-uno img {
+    width: 280px;
+    height: 490px;
+}
+
+.img-dos img {
+    width: 250px;
+    height: 490px;
+}
+
+.shirt-number {
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 270px;
+    padding: 10px 0 0 13px;
+    color: #fff;
+}
+
+.banner,
+.img-banner {
+    width: 42px;
+}
+
+.banner {
+    position: absolute;
+    left: 10px;
+    bottom: 55px;
+}
+
+.card-name,
+.card-name1 {
+    width: 50px;
+    height: 550px;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.name-1 {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 48px;
+    color: #fff;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+}
+
+.descriptive-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 45px;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px -2px 9px 0px rgba(20,2,4,1);
+}
+
+.descriptive-text p {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .end {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -324,6 +565,13 @@ header a {
     position: sticky;
     bottom: 0;
     font-size: 0;
+    animation: footer 0.5s ease-in;
+    z-index: 3;
+}
+
+@keyframes footer {
+    0%{transform: translatey(100%);}
+    100%{transform: translatey(0);}
 }
 
 .bottom1 {
@@ -461,7 +709,6 @@ header a {
     border-radius: 50%;
     width: 100%;
     height: 100%;
-    cursor: pointer;
 }
 
 /*EASTER-EGG1.HTML*/
@@ -563,6 +810,21 @@ header a {
     background-color: black;
 }
 
+.nightmare::-webkit-scrollbar {
+    width: 18px;
+}
+
+.nightmare::-webkit-scrollbar-track {
+    border-radius: 10px;
+    border-right: 1px solid white;
+    margin-block: 0.5rem;
+}
+
+.nightmare::-webkit-scrollbar-thumb {
+    border-right: 1px solid white;
+    border-radius: 10px;
+}
+
 .easter-egg5__text {
     text-align: center;
     font-family: 'Creepster', cursive;
@@ -572,11 +834,12 @@ header a {
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 3rem;
+    margin-bottom: 10rem;
 }
 
 .bloody-pictures {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
     justify-content: stretch;
     min-width: 1rem;
@@ -584,10 +847,27 @@ header a {
     margin: auto;
 }
 
-.bloodshed {
-    grid-column: 1/4;
+.picture1,
+.picture2,
+.picture3,
+.picture4,
+.eye,
+.all-space {
+    height: 100%;
+    width: 100%;
 }
 
+.picture1,
+.picture2,
+.picture3,
+.picture4 {
+    grid-column: 1/3;
+    height: 30rem;
+}
+
+.all-space {
+    grid-column: 1/3;
+}
 
 .escape {
     text-align: center;

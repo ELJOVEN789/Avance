@@ -1,72 +1,75 @@
-body {
+.bar {
   background: white;
   transition: 0.3s ease all;
 }
-body.dark {
+.bar.dark {
   background: black;
 }
-body.dark .title__animation {
+.bar.dark .yo img {
+  border: 4px solid white;
+}
+.bar.dark .title__animation {
   color: white;
 }
-body.dark .section {
+.bar.dark .section {
   border: 0.3rem solid white;
 }
-body.dark .text1 {
+.bar.dark .text1 {
   color: white;
 }
-body.dark .text2 {
+.bar.dark .text2 {
   color: white;
 }
-body.dark .text3 {
+.bar.dark .text3 {
   color: white;
 }
-body.dark .text4 {
+.bar.dark .text4 {
   color: white;
 }
-body.dark .text5 {
+.bar.dark .text5 {
   color: white;
 }
-body.dark .contact-style {
+.bar.dark .contact-style {
   border: 0.4rem solid white;
 }
-body.dark .contact {
+.bar.dark .contact {
   color: white;
 }
-body.dark .mensaje {
+.bar.dark .mensaje {
   color: white;
 }
-body.dark .datos {
+.bar.dark .datos {
   color: white;
 }
-body.dark .form {
+.bar.dark .form {
   border: 0.4rem solid white;
   color: white;
 }
-body.dark .election {
+.bar.dark .election {
   border: 0.2rem solid white;
 }
-body.dark .final {
+.bar.dark .final {
   color: white;
 }
-body.dark .thanks {
+.bar.dark .thanks {
   color: white;
 }
-body::-webkit-scrollbar {
+.bar::-webkit-scrollbar {
   width: 18px;
 }
-body::-webkit-scrollbar-track {
+.bar::-webkit-scrollbar-track {
   background: hsl(250deg, 60%, 50%);
   border-radius: 10px;
   border-right: 1px solid white;
   margin-block: 0.5rem;
 }
-body::-webkit-scrollbar-thumb {
+.bar::-webkit-scrollbar-thumb {
   background: hsl(250deg, 100%, 30%);
   border: 0.2rem solid hsl(250deg, 60%, 50%);
   border-right: 1px solid white;
   border-radius: 10px;
 }
-body::-webkit-scrollbar-thumb:hover {
+.bar::-webkit-scrollbar-thumb:hover {
   background: hsl(250deg, 80%, 20%);
 }
 
@@ -110,135 +113,19 @@ body::-webkit-scrollbar-thumb:hover {
   color: white;
 }
 
-.check1 {
-  position: relative;
-  width: 5rem;
-  cursor: pointer;
-}
-.check1::before {
-  content: "";
-  position: absolute;
-  width: 5rem;
-  height: 2.5rem;
-  background: black;
-  border-radius: 2.5rem;
-}
-.check1::after {
-  content: "";
-  position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
-  background: white;
-  border-radius: 2.5rem;
-  transition: 0.25s;
-  border: 2px solid black;
-}
-.check1:checked::after {
-  left: 2.5rem;
-  border: 2px solid blue;
-}
-.check1:checked::before {
-  background: blue;
-}
-
-.check2 {
-  position: relative;
-  width: 5rem;
-  cursor: pointer;
-}
-.check2::before {
-  content: "";
-  position: absolute;
-  width: 5rem;
-  height: 2.5rem;
-  background: black;
-  border-radius: 2.5rem;
-}
-.check2::after {
-  content: "";
-  position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
-  background: white;
-  border-radius: 2.5rem;
-  transition: 0.25s;
-  border: 2px solid black;
-}
-.check2:checked::after {
-  left: 2.5rem;
-  border: 2px solid blue;
-}
-.check2:checked::before {
-  background: blue;
-}
-
-.check3 {
-  position: relative;
-  width: 5rem;
-  cursor: pointer;
-}
-.check3::before {
-  content: "";
-  position: absolute;
-  width: 5rem;
-  height: 2.5rem;
-  background: black;
-  border-radius: 2.5rem;
-}
-.check3::after {
-  content: "";
-  position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
-  background: white;
-  border-radius: 2.5rem;
-  transition: 0.25s;
-  border: 2px solid black;
-}
-.check3:checked::after {
-  left: 2.5rem;
-  border: 2px solid blue;
-}
-.check3:checked::before {
-  background: blue;
-}
-
-.check4 {
-  position: relative;
-  width: 5rem;
-  cursor: pointer;
-}
-.check4::before {
-  content: "";
-  position: absolute;
-  width: 5rem;
-  height: 2.5rem;
-  background: black;
-  border-radius: 2.5rem;
-}
-.check4::after {
-  content: "";
-  position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
-  background: white;
-  border-radius: 2.5rem;
-  transition: 0.25s;
-  border: 2px solid black;
-}
-.check4:checked::after {
-  left: 2.5rem;
-  border: 2px solid blue;
-}
-.check4:checked::before {
-  background: blue;
-}
-
+.check1,
+.check2,
+.check3,
+.check4,
 .jojo {
   position: relative;
   width: 5rem;
   cursor: pointer;
 }
+.check1::before,
+.check2::before,
+.check3::before,
+.check4::before,
 .jojo::before {
   content: "";
   position: absolute;
@@ -247,6 +134,10 @@ body::-webkit-scrollbar-thumb:hover {
   background: black;
   border-radius: 2.5rem;
 }
+.check1::after,
+.check2::after,
+.check3::after,
+.check4::after,
 .jojo::after {
   content: "";
   position: absolute;
@@ -257,10 +148,49 @@ body::-webkit-scrollbar-thumb:hover {
   transition: 0.25s;
   border: 2px solid black;
 }
+.check1:checked::after,
+.check2:checked::after,
+.check3:checked::after,
+.check4:checked::after,
 .jojo:checked::after {
   left: 2.5rem;
   border: 2px solid blue;
 }
+.check1:checked::before,
+.check2:checked::before,
+.check3:checked::before,
+.check4:checked::before,
 .jojo:checked::before {
   background: blue;
+}
+
+.check5 {
+  position: relative;
+  width: 5rem;
+  cursor: pointer;
+}
+.check5::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 2.5rem;
+  background: black;
+  border-radius: 2.5rem;
+}
+.check5::after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border-radius: 2.5rem;
+  transition: 0.25s;
+  border: 2px solid black;
+}
+.check5:checked::after {
+  left: 2.5rem;
+  border: 2px solid red;
+}
+.check5:checked::before {
+  background: red;
 }/*# sourceMappingURL=framework.css.map */

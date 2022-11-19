@@ -18,10 +18,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cookie&family=Fredericka+the+Great&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Inline&family=Cookie&family=Creepster&family=Fredericka+the+Great&family=Kolker+Brush&family=Oswald:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8ddd3c33a6.js" crossorigin="anonymous"></script>
     <title>Proyecto final</title>
 </head>
-<body>
+<body class="bar">
     <header>
         <div>
             <a class="logo" href="easter-egg1.html"><img src="../Utils/image/logo.png" alt="imagen logo"></a></li>
@@ -47,12 +50,18 @@
         <div class="title">
             <h1 class="title__animation">Hoja de vida Sebastian</h1>
         </div>
+        <figure class="yo">
+            <img src="../Utils/image/yo.jpg" alt="foto mia" onclick=presentacion()>
+        </figure>
         <div>
             <div>
-                <h2 class="section section__animation" id="hobbies">Mis hobbies</h2>
+                <h2 class="section" id="hobbies">Mis hobbies</h2>
             </div>
             <div>
-                <ul class="text1">
+                <ul class="text1 see">
+                    <figure class="instrument">
+                        <img src="../Utils/image/piano.png" alt="piano" onclick=piano()>
+                    </figure>
                     <li>Videojuegos</li>
                     <p>Me encantan todo tipo de videojuegos
                         y siempre me la paso muy bien cuando
@@ -70,9 +79,9 @@
                         estoy en la compañia de amigos o familiares, porque
                         pienso que tener todos esos recuerdos y experiencias
                         es mucho mejor con las personas que uno mas quiere y
-                        aprecia, por lo que se recuerdan con mas cariños. Y a
+                        aprecia, por lo que se recuerdan con mas cariño. Y a
                         pesar de que no he podido viajar tanto como desearia
-                        espero en el futuro si conocer mucho mas.
+                        espero en el futuro conocer mucho mas.
                     </p>
                     <li>Leer comics</li>
                     <p>Antes habia empezado a leer comics en una aplicacion pero
@@ -94,10 +103,13 @@
                 </ul>
             </div>
             <div>
-                <h2 class="section section__animation" id="habilidades">Mis habilidades</h2>
+                <h2 class="section" id="habilidades">Mis habilidades</h2>
             </div>
             <div>
-                <ul class="text2">
+                <ul class="text2 see">
+                    <figure class="instrument">
+                        <img src="../Utils/image/violin.png" alt="violin" onclick=violin()>
+                    </figure>
                     <li>Matematicas</li>
                     <p>Casi siempre se me han dado bien los numeros pero a pesar de
                         esto los temas que he visto recientemente son mas
@@ -108,7 +120,7 @@
                     </p>
                     <li>Ingles</li>
                     <p>El ingles es un idioma que se me da muy bien y me gusta bastante como
-                        es y el como se habla por lo que puede tener conversaciones, leer
+                        es y el como se habla, por lo que puedo tener conversaciones, leer
                         texto, escribir y algo que me gusta mucho son las jergas ya que me
                         parecen muy divertidas de usar, ademas el saber ingles me a permitido
                         hablar con mas personas y conocer gente nueva. Tambien me ha ayudado
@@ -117,7 +129,7 @@
                     <li>Escuchar y comprender a los demas</li>
                     <p>Hay veces que a las personas que conozco les pasa algo y quieren
                         contarselo a alguien y a mi me gusta estar hay para ellos cuando lo
-                        necesitan y dejar que se desahoguen, que cuentan lo que les paso y
+                        necesitan y dejar que se desahoguen, que cuenten lo que les paso y
                         que sepan que yo y muchas personas mas estamos hay para apoyarlas
                         sin importar que pase.
                     </p>
@@ -131,10 +143,13 @@
                 </ul>
             </div>
             <div>
-                <h2 class="section section__animation" id="conocimientos">Mis conocimientos</h2>
+                <h2 class="section" id="conocimientos">Mis conocimientos</h2>
             </div>
             <div>
-                <ul class="text3">
+                <ul class="text3 see">
+                    <figure class="instrument">
+                        <img src="../Utils/image/trompeta.png" alt="trompeta" onclick=trompeta()>
+                    </figure>
                     <li>Programacion</li>
                     <p>Empece no hace mucho pero tengo ciertos conocimientos sobre como programar
                         de manera Frontend y como hacer una pagina web basica empleando Html y Css
@@ -166,10 +181,13 @@
                 </ul>
             </div>
             <div>
-                <h2 class="section section__animation" id="aspiraciones">Mis aspiraciones</h2>
+                <h2 class="section" id="aspiraciones">Mis aspiraciones</h2>
             </div>
             <div>
-                <ul class="text4">
+                <ul class="text4 see">
+                    <figure class="instrument">
+                        <img src="../Utils/image/bateria.png" alt="bateria" onclick=bateria()>
+                    </figure>
                     <li>Hacer lo que me gusta</li>
                     <p>Ya que si uno hace lo que le gusta es muy dificil que se pudiera llegar a
                         cansar o aburrir de eso, por lo cual quiero poder trabajar en las cosas que
@@ -192,7 +210,7 @@
                         desee hacer y que lo haga sentir satisfecho con el resultado.
                     </p>
                     <li>Ser mejor cada dia</li>
-                    <p>Quiero que cada dia que pasa sea un avance en mi y que me ayude a ver ser
+                    <p>Quiero que cada dia que pasa sea un avance en mi y que me ayude a ser
                         mas comprensivo y ser mejor persona haciendo las cosas cada vez mejor
                         y poder aprender de mis errores del pasado para reflexionar de ellos y
                         que no vuelvan a suceder y poderme relacionar cada vez mejor con los
@@ -201,10 +219,13 @@
                 </ul>
             </div>
             <div>
-                <h2 class="section section__animation" id="actitudes">Mis actitudes</h2>
+                <h2 class="section" id="actitudes">Mis actitudes</h2>
             </div>
             <div>
-                <ul class="text5">
+                <ul class="text5 see">
+                    <figure class="instrument">
+                        <img src="../Utils/image/flauta traversa.png" alt="flauta" onclick=flauta()>
+                    </figure>
                     <li>Positiva</li>
                     <p>A pesar de que no siempre las cosas salgan bien y uno pueda llegarse a frustrar
                         por lo general trato de ver las cosas del lado positiva y ver si de alguna
@@ -224,7 +245,7 @@
                     </p>
                     <li>Paciente</li>
                     <p>Que si algo no se da o toca esperar para que se pueda hacer, funcione o algo
-                        por el estilo tengo paciencia porque se uno se desespera podria generar un problema
+                        por el estilo tengo paciencia porque si uno se desespera podria generar un problema
                         o ponerse inquieto a la hora de hacer algo lo que dificultaria el pensar de
                         manera adecuada como se deberia hacer lo planteado.
                     </p>
@@ -243,21 +264,22 @@
                 </div>
             </div>
             <form action="" id="elFormulario" class="form">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                <div class="data">
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span>Nombre</span>
                 </div>
-                <div>
-            <label for="correo">Correo</label>
-            <input type="email" id="correo" name="correo" placeholder="Ingrese su correo" required>
-        </div>
-        <div>
-            <label for="numero">Numero</label>
-            <input type="number" id="numero" name="numero" placeholder="Ingrese su numero" required>
-            <br>
-            <input class="send" type="submit">
-        </div>
-    </form>
+                <div class="data">
+                    <input type="email" id="correo" name="correo" required>
+                    <span>Correo</span>
+                </div>
+                <div class="data">
+                    <input type="number" id="numero" name="numero" required>
+                    <span>Numero</span>
+                </div>
+                <div class="data">
+                    <input class="send" type="submit">
+                </div>
+            </form>
     <div class="election">
         <h2 class="final">Que opinas de mi hoja de vida</h2>
         <form action="" id="otroFormulario">
@@ -272,23 +294,73 @@
             <input class="enviar" type="submit" name="enviar" id="enviar">
         </form>
     </div>
+    <div class="thanks">
+        <h1>AGRADECIMIENTOS</h1>
+        <p>Gracias a todos por parte de Sofka y Rofe por
+            estar desde inicio a fin apoyandonos a lo
+            largo de este arduo camino, fue un placer
+            estar con ustedes y les agradezco de todo
+            corazon por esta gran oportunidad que nos
+            dieron a los jovenes y el permitirnos formar
+            parte de esta hermosa comunidad.
+        </p>
+    </div>
+    <figure class="jc">
+        <img src="../Utils/image/final-jc1.jpeg" alt="foto final del programa jc">
+        <img src="../Utils/image/final-jc2.jpeg" alt="foto final del programa jc">
+    </figure>
     </main>
     <footer>
-        <div class="thanks">
-            <h1>AGRADECIMIENTOS</h1>
-            <p>Gracias a todos por parte de Sofka y Rofe por
-                estar desde inicio a fin apoyandonos a lo
-                largo de este arduo camino, fue un placer
-                estar con ustedes y les agradezco de todo
-                corazon por esta gran oportunidad que nos
-                dieron a los jovenes y el permitirnos formar
-                parte de esta hermosa comunidad.
-            </p>
+        <div class="main-container">
+            <section class="card-icon">
+                <figure class="icon">
+                    <img src="../Utils/image/rofe.png" alt="fundacion rofe">
+                </figure>
+                <span class="club-name">fundacion rofe</span>
+            </section>
+            <section class="card-container">
+                <figure class="img-uno">
+                    <img src="../Utils/image/omar.png" alt="omar de fundacion rofe">
+                </figure>
+                <p class="shirt-number">7</p>
+                <figure class="banner">
+                    <img class="img-banner" src="../Utils/image/jovenes-creativos.png" alt="">
+                </figure>
+                <section class="card-name">
+                    <p class="name-1">OMAR</p>
+                </section>
+                <div class="descriptive-text">
+                    <p>grupo <br> g6env</p>
+                    <p>afiliacion <br> fundacion rofe</p>
+                    <p>nacionalidad <br> colombiano</p>
+                </div>
+            </section>
         </div>
-        <figure class="jc">
-            <img src="../Utils/image/final-jc1.jpeg" alt="foto final del programa jc">
-            <img src="../Utils/image/final-jc2.jpeg" alt="foto final del programa jc">
-        </figure>
+        <div class="main-container">
+            <section class="card-icon1">
+                <figure class="icon1">
+                    <img src="../Utils/image/sofka.png" alt="sofka">
+                </figure>
+                <span class="club-name">sofka</span>
+            </section>
+            <section class="card-container1">
+                <figure class="img-dos">
+                    <img src="../Utils/image/david.png" alt="david de sofka">
+                </figure>
+                <p class="shirt-number">1</p>
+                <figure class="banner">
+                    <img class="img-banner" src="../Utils/image/sofka-u.png" alt="sofka u">
+                </figure>
+                <section class="card-name1">
+                    <p class="name-1">DAVID</p>
+                </section>
+                <div class="descriptive-text">
+                    <p>grupo <br> g6env</p>
+                    <p>afiliacion <br> sofka</p>
+                    <p>nacionalidad <br> colombiano</p>
+                </div>
+            </section>
+        </div>
     </footer>
     <nav class="end">
         <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="bottom1" src="../Utils/icons/whatsapp.svg" alt="icono de whatsapp"></a>
