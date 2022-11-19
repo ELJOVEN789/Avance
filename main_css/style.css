@@ -443,11 +443,11 @@ header {
 }
 
 .icon {
-    top: 35px;
+    top: 38px;
 }
 
 .icon1 {
-    top: 25px;
+    top: 27px;
 }
 
 .icon img {
@@ -692,7 +692,7 @@ header {
     border: 3px solid black;
 }
 
-.dio-background {
+#dio-background {
     background: rgb(187, 4, 4);
 }
 
@@ -729,7 +729,7 @@ header {
 
 /*EASTER-EGG2.HTML*/
 
-.background {
+#background {
     background-color: darkgoldenrod;
 }
 

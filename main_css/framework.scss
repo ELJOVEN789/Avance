@@ -71,6 +71,14 @@
         color: white;
     }
 
+    &.dark .icon img {
+        background: white;
+    }
+
+    &.dark .icon1 img {
+        background: white;
+    }
+
     &::-webkit-scrollbar {
         width: 18px;
     }

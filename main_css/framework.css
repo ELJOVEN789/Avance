@@ -54,6 +54,12 @@
 .bar.dark .thanks {
   color: white;
 }
+.bar.dark .icon img {
+  background: white;
+}
+.bar.dark .icon1 img {
+  background: white;
+}
 .bar::-webkit-scrollbar {
   width: 18px;
 }
